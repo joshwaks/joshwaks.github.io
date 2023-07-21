@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #edf6f9;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: animate 16s ease-in-out infinite;
+    background: #f2f2f2;
+
+}
+
+/*
+@keyframes animate {
+
+    0%,
+    100% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/wallpaper.jpg);
+    }
+
+    25% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/pxfuel3.jpg);
+    }
+
+    50% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/pxfuel.jpg);
+    }
+
+    75% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/pxfuel2.jpg)
+    }
+}
+*/
+#header {
+    width: 100%;
+}
+
+.container {
+    margin: 20px 30px;
+}
+
+nav {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    background-color: #f1faee;
+
+}
+
+nav h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    margin-left: 80px;
+
+}
+nav ul{
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    font-size: 16px;
+    margin: 10px 30px;
+    font-weight: 600px;
+    justify-content: space-between;
+    cursor: pointer;
+
+
+}
+
+nav ul li:hover {
+    background-color: #0077b6;
+    color: #edf6f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+}
+
+nav .btn {
+    width: 10rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    background-color: #0077b6;
+    color: white;
+}
+nav .btn:hover{
+    background-color: #264653;
+    color: #f1faee;
+
+}
+
+.about {
+    color: black;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.about h1 {
+    margin-top: 70px;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.about p {
+    margin-top: 20px;
+    font: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.container2 {
+    width: 70%;
+    margin: auto;
+    position: relative;
+    margin-top: 50px;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 80vh;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.container2 img {
+    border-radius: 10px;
+    display: block;
+}
+
+.container2 .row .column img {
+    width: 100%;
+    height: 100px;
+    border-radius: 0px;
+}
+
+.sectionBTN .btn {
+    width: 10rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    background-color: #0077b6;
+    color: white;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+
+/*-----------------------content-------------------*/
+#services {
+    margin-top: 20px;
+    background: white;
+    padding-bottom: 100px;
+}
+
+.content {
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+}
+
+.content h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: black;
+    font-size: 50px;
+    font-weight: 600px;
+    margin-left: 4rem;
+}
+
+.flex-container {
+    display: flex;
+    color: black;
+    margin: 0px 50px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+
+
+}
+
+.flex-box {
+
+    flex: 0 0 calc(50% - 20px);
+    background-color: #f3f3f3;
+    margin: 10px;
+    padding: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+
+
+}
+
+.flex-box h3 {
+    margin-bottom: 10px;
+}
+
+.flex-box p {
+    text-align: justify;
+}
+#about{
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+}
+.about-container{
+    display: flex;
+    color: black;
+    margin: 0px 50px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+.about-content{
+    flex: 0 0 calc(50% - 20px);
+    margin: 10px;
+    padding: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding-right: 20px;
+    
+}
+.about-content h2{
+    font-weight: 600px;
+}
+.about-content p{
+    margin-top: 30px;
+    text-align: justify;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 120px;
+    line-height: 1.5;
+}
+
+.about-content p .fa-solid{
+    color: #00b634;
+}
+
+.about-image{
+    flex: 1;
+    padding: 20px;
+}
+.about-image img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
